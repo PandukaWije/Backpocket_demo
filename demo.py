@@ -18,7 +18,7 @@ def open_ai_scrip(email):
 
 
 # Streamlit UI components
-st.title("Email Parser")
+st.title("Backpocket Test Environment")
 
 # Input field for raw email
 raw_email = st.text_area("Enter Raw Email", height=200)
