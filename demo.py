@@ -1,11 +1,10 @@
 import streamlit as st
 import openai
-from dotenv import load_dotenv
+
 
 
 def open_ai_scrip(email):
-    load_dotenv()
-    openai.api_key = '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'
+    OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
     response = openai.ChatCompletion.create(
     model="gpt-4",
     messages=[{"role": "system", "content" : '''You will be provided with unstructured data, and your task is to process the data - segment the sections to following titles
